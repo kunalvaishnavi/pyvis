@@ -7,4 +7,4 @@ I've updated my README to be more like a README for an actual open source repo. 
 Over the weekend, I worked on understanding pybaseball. I now have a fairly good idea of how it works. Now, I'll need to start working on my repo and writing improvements to pybaseball.
 
 ## Jan 29
-I realize that I need to learn the inner workings of matplotlib because there are so many different things you can do with it. That way, I'll know what kinds of graphs I want to quickly generate in my library.
+In class today, I realized I'll need to learn the inner workings of matplotlib because there are so many different things you can do with it. That way, I'll know what kinds of graphs I want to quickly generate in my library. That is what I'll work on over the next two days.
