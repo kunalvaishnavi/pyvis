@@ -8,3 +8,6 @@ Over the weekend, I worked on understanding pybaseball. I now have a fairly good
 
 ## Jan 29
 In class today, I realized I'll need to learn the inner workings of matplotlib because there are so many different things you can do with it. That way, I'll know what kinds of graphs I want to quickly generate in my library. That is what I'll work on over the next two days.
+
+## Jan 30
+I'm getting a bit confused why the `statcast` function runs for certain dates and for the exact same dates, doesn't run. I am going to look into how the `statcast` function picks up the customized CSV file from [Baseball Savant](https://baseballsavant.mlb.com/statcast_search).
