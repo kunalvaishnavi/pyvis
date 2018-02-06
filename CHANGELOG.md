@@ -11,3 +11,9 @@ In class today, I realized I'll need to learn the inner workings of `matplotlib`
 
 ## Jan 30
 I'm getting a bit confused why the `statcast` function runs for certain dates and for the exact same dates, doesn't run. I am going to look into how the `statcast` function picks up the customized CSV file from [Baseball Savant](https://baseballsavant.mlb.com/statcast_search). Then, I'll get back to understanding `matplotlib`.
+
+## Feb 2
+I tried to figure out why I can't obtain the link to the CSV file. Eventually, Baseball Savant was put under maintenance, so I couldn't work any further on that. So, I started working on my own library, `pyvis`.
+
+## Feb 6
+I continued trying to figure out the link to the CSV file. I asked Dr. Z and he said to use `selenium` to simulate the `onclick` event to download the CSV. If it doesn't take too long, I'm going to use `selenium`. Otherwise, I'm going to deal with the Statcast search issues because I need to make more progress on my own library.
