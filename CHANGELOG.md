@@ -16,4 +16,4 @@ I'm getting a bit confused why the `statcast` function runs for certain dates an
 I tried to figure out why I can't obtain the link to the CSV file. Eventually, Baseball Savant was put under maintenance, so I couldn't work any further on that. So, I started working on my own library, `pyvis`.
 
 ## Feb 6
-I continued trying to figure out the link to the CSV file. I asked Dr. Z and he said to use `selenium` to simulate the `onclick` event to download the CSV. If it doesn't take too long, I'm going to use `selenium`. Otherwise, I'm going to deal with the Statcast search issues because I need to make more progress on my own library.
+I continued trying to figure out the link to the CSV file. I asked Dr. Z and he said to use [Selenium](http://selenium-python.readthedocs.io/) to simulate the `onclick` event to download the CSV. If it doesn't take too long, I'm going to use Selenium. Otherwise, I'm going to deal with the Statcast search issues because I need to make more progress on my own library.
