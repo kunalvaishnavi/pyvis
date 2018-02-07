@@ -3,10 +3,10 @@ from pybaseball import statcast_batter
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Plate appearance breakdown
+# Hit breakdown
 # Time can be a day or a range of dates (ex: hit_breakdown('2016-05-01', 'dustin', 'pedroia) 
 # or hit_breakdown('2016-05-01 to 2017-05-01', 'dustin', 'pedroia'))
-def PA_breakdown(time, firstname, lastname):
+def hit_breakdown(time, firstname, lastname):
     playerid = playerid_lookup(lastname, firstname)
     print('Calculating hit breakdown. One moment please.')
     if "to" in time: data = statcast_batter(time[0:10], time[14:], player_id=int(playerid['key_mlbam'][0]))
