@@ -23,3 +23,6 @@ Today, I created my first function for PyVis called `hit_breakdown`, which gives
 
 ## Feb 8
 I added a new function today called `pitch_breakdown`, which does what `hit_breakdown` does but for the type of pitch thrown.
+
+## Feb 9
+I compiled a list of other ideas I want to implement and posted that list as an issue. Over the weekend, I will clean up my repo so that it's ready for others to contribute to.
