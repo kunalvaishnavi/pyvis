@@ -9,11 +9,8 @@ First, you need to install `pybaseball` by typing the following into the command
 
 Then, you can install PyVis by typing the following into the command line: `pip install pyvis`.
 
-## Running Tests
-To be filled in...
-
 ## Contributing
-See CONTRIBUTING.md to learn how you can contribute to PyVis. (Needs to be created)
+See CONTRIBUTING.md to learn how you can contribute to PyVis.
 
 ## License
 The PyVis project is under the MIT License. See [LICENSE.md](https://github.com/kunalcsc630/pyvis/blob/master/LICENSE) for more.
