@@ -9,5 +9,6 @@ Ideas:
 To Fix:
 - Documentation of code
 - In `breakdown.py`, the pie charts are simplified such that very small values are combined. It would be nice to see all of the values in a better looking way.
+- There is a CSV issue in `pybaseball` where if you run one of its functions that gathers Statcast data, it sometimes won't grab all of the data and instead return an error. See the comment on line 43 [here](https://github.com/jldbc/pybaseball/blob/master/pybaseball/statcast.py). It's hard to explain over words so start an issue if you're still confused.
 
 If you have any additional ideas, feel free to implement them and then send a pull request. Note that when you name your file, do so based on its function. For instance, the strike zone plotting file should be named as `plotting.py`.
