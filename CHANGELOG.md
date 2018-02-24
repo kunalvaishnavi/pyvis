@@ -26,3 +26,18 @@ I added a new function today called `pitch_breakdown`, which does what `hit_brea
 
 ## Feb 9
 I compiled a list of other ideas I want to implement and posted that list as an issue. Over the weekend, I will clean up my repo so that it's ready for others to contribute to.
+
+## Feb 11-17
+As per the project requirements, I did not commit to or work on my project and only worked on a classmate's project.
+
+## Feb 19
+I realized that I was duplicating code in multiple functions, so I factored out code and wrote two general functions called `general_event_breakdown` and `process_data`. 
+
+## Feb 20
+I researched ways I can create a strike zone plotter that takes in data and plots the location of balls in the strike zone along with their outcome.
+
+## Feb 22
+I started creating the function and called it `batter_strike_zone_plotting`. I hope to also create an equivalent function for pitchers.
+
+## Feb 23
+The strike zone that my code was generating was behaving weirdly last night, as it was giving me a strike zone that looked like a wide rectangle instead of a tall rectangle. I'm still debugging the issue today.
