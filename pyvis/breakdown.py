@@ -5,21 +5,21 @@ from pybaseball import statcast_pitcher
 import numpy as np
 import matplotlib.pyplot as plt
 
+# Displays a pie chart of the events that happen after a batter's swing
 # Time can be a day or a range of dates (ex: batter_event_breakdown('2016-05-01', 'dustin', 'pedroia) 
 # or batter_event_breakdown('2016-05-01 to 2017-05-01', 'dustin', 'pedroia'))
-# Displays a pie chart of the data
 def batter_event_breakdown(time, firstname, lastname):
     data = process_data(time, firstname, lastname, 'batter')
     general_event_breakdown(data, 'hit event')
     
+# Displays a pie chart of the events that happen after a pitcher's pitch
 # Time can be a day or a range of dates (ex: pitcher_event_breakdown('2016-05-01', 'chris', 'sale') 
 # or pitcher_event_breakdown('2016-01-01 to 2017-01-01', 'chris', 'sale'))
-# Displays a pie chart of the data
 def pitcher_event_breakdown(time, firstname, lastname):
     data = process_data(time, firstname, lastname, 'pitcher')
     general_event_breakdown(data, 'pitch event')
     
-# Pitch selection breakdown
+# Pitch selection breakdown for a pitcher
 # Time can be a day or a range of dates (ex: pitch_selection_breakdown('2016-05-01', 'chris', 'sale') 
 # or pitch_selection_breakdown('2016-01-01 to 2017-01-01', 'chris', 'sale'))
 def pitch_selection_breakdown(time, firstname, lastname):
