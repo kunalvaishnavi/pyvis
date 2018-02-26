@@ -1,4 +1,4 @@
-import breakdown
+import breakdown # breakdown.py
 import matplotlib.patches as patches
 
 # Plots strike zone of pitches for a batter
