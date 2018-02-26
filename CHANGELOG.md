@@ -41,3 +41,6 @@ I started creating the function and called it `batter_strike_zone_plotting`. I h
 
 ## Feb 23
 The strike zone that my code was generating was behaving weirdly last night, as it was giving me a strike zone that looked like a wide rectangle instead of a tall rectangle. I'm still debugging the issue today.
+
+## Feb 26
+I finished creating the `batter_strike_zone_plotting` last night and today I'm making an equivalent function for pitchers.
