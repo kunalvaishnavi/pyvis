@@ -12,8 +12,8 @@ def sprayChart(time, firstname, lastname):
 # Draw baseball field and plot data points
 def drawChart(data, firstname, lastname):
     fig = plt.figure()
-    # foul lines & base paths
     print("Creating the spray chart.")
+    # foul lines & base paths
     leftFoulLine = lines.Line2D((0,1), (1.5,0), color='black', transform=fig.transFigure, figure=fig)
     rightFoulLine = lines.Line2D((1,2), (0,1.5), color='black', transform=fig.transFigure, figure=fig)
     leftBaseLine = lines.Line2D((0.85,1), (0.225,0.45), color='gray', transform=fig.transFigure, figure=fig)
@@ -30,8 +30,7 @@ def drawChart(data, firstname, lastname):
     outfieldPath = Path(outfieldPts, outfieldDir)
     outfield = patches.PathPatch(outfieldPath, edgecolor='gray', facecolor='none', transform=fig.transFigure, lw=2)
     fig.patches.extend([infield, outfield])
-    # convert points to RJ Weise's coordinate system, then my coordinate system
-    # based on above values for infield & outfield points: my_x ==> [0.4, 1.6] & my_y ==> [0, 1.75]
+    # convert points to my coordinate system based on above values for infield & outfield points: my_x ==> [0.4, 1.6] & my_y ==> [0, 1.75]
     x_arr = [((((x-125)/120)+1)/(2/1.2))+0.4 for x in data['hc_x'] if not np.isnan(x)]
     y_arr = [((y-200)*-1)/(200/1.75) for y in data['hc_y'] if not np.isnan(y)]
     for x, y in zip(x_arr, y_arr):
