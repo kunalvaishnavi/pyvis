@@ -1,9 +1,4 @@
-# Breakdown file
-from pybaseball import playerid_lookup
-from pybaseball import statcast_batter
-from pybaseball import statcast_pitcher
-import numpy as np
-import matplotlib.pyplot as plt
+import data # data.py
 
 # Displays a pie chart of the events that happen after a batter's swing
 # Time can be a day or a range of dates (ex: batter_event_breakdown('2016-05-01', 'dustin', 'pedroia) 
