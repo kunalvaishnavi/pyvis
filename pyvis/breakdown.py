@@ -1,24 +1,29 @@
 import data # data.py
 
-# Displays a pie chart of the events that happen after a batter's swing
-# Time can be a day or a range of dates (ex: batter_event_breakdown('2016-05-01', 'dustin', 'pedroia) 
-# or batter_event_breakdown('2016-05-01 to 2017-05-01', 'dustin', 'pedroia'))
-def batter_event_breakdown(time, firstname, lastname):
-    data = process_data(time, firstname, lastname, 'batter')
-    general_event_breakdown(data, 'hit event')
+# BR in function names = breakdown (ex: batterBR = batter breakdown)
+
+# Batter event breakdown in pie chart
+# Time can be a day or a range of dates (ex: batterBR('2016-05-01', 'dustin', 'pedroia) 
+# or batterBR('2016-05-01 to 2017-05-01', 'dustin', 'pedroia'))
+def batterBR(time, firstname, lastname):
+    data = processData(time, firstname, lastname, 'batter')
+    if data.size == 0: return "Error: Did not find any data. Try again."
+    generalBR(data, 'hit event')
     
-# Displays a pie chart of the events that happen after a pitcher's pitch
-# Time can be a day or a range of dates (ex: pitcher_event_breakdown('2016-05-01', 'chris', 'sale') 
-# or pitcher_event_breakdown('2016-01-01 to 2017-01-01', 'chris', 'sale'))
-def pitcher_event_breakdown(time, firstname, lastname):
-    data = process_data(time, firstname, lastname, 'pitcher')
-    general_event_breakdown(data, 'pitch event')
+# Pitcher event breakdown in pie chart
+# Time can be a day or a range of dates (ex: pitcherBR('2016-05-01', 'chris', 'sale') 
+# or pitcherBR('2016-01-01 to 2017-01-01', 'chris', 'sale'))
+def pitcherBR(time, firstname, lastname):
+    data = processData(time, firstname, lastname, 'pitcher')
+    if data.size == 0: return "Error: Did not find any data. Try again."
+    generalBR(data, 'pitch event')
     
-# Pitch selection breakdown for a pitcher
-# Time can be a day or a range of dates (ex: pitch_selection_breakdown('2016-05-01', 'chris', 'sale') 
-# or pitch_selection_breakdown('2016-01-01 to 2017-01-01', 'chris', 'sale'))
-def pitch_selection_breakdown(time, firstname, lastname):
-    data = process_data(time, firstname, lastname, 'pitcher')
+# Pitch selection breakdown in pie chart
+# Time can be a day or a range of dates (ex: pitchSelectionBR('2016-05-01', 'chris', 'sale') 
+# or pitchSelectionBR('2016-01-01 to 2017-01-01', 'chris', 'sale'))
+def pitchSelectionBR(time, firstname, lastname):
+    data = processData(time, firstname, lastname, 'pitcher')
+    if data.size == 0: return "Error: Did not find any data. Try again."
     freq = data['pitch_type'].value_counts()
     print("Frequency of pitch breakdown:")
     print(freq)
@@ -41,9 +46,8 @@ def pitch_selection_breakdown(time, firstname, lastname):
     plt.tight_layout()
     plt.show()
     
-# General event breakdown
-# Takes in data from statcast function and displays pie chart of data
-def general_event_breakdown(data, name):
+# Takes in data from above functions and displays pie chart of data
+def generalBR(data, name):
     data = data[np.isfinite(data['babip_value'])]
     freq = data['events'].value_counts()
     print("Frequency of " + name + " breakdown:")
