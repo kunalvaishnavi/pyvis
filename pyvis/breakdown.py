@@ -63,15 +63,3 @@ def general_event_breakdown(data, name):
     plt.axis('equal')
     plt.tight_layout()
     plt.show()
-    
-# Returns correct type of data (dependent on player and his type)
-def process_data(time, firstname, lastname, pos):
-    playerid = playerid_lookup(lastname, firstname)
-    if "to" in time:
-        if pos == 'batter': return statcast_batter(time[0:10], time[14:], player_id=int(playerid['key_mlbam'][0]))
-        elif pos == 'pitcher': return statcast_pitcher(time[0:10], time[14:], player_id=int(playerid['key_mlbam'][0]))
-        else: return None
-    else: 
-        if pos == 'batter': return statcast_batter(time, player_id=int(playerid['key_mlbam'][0]))
-        elif pos == 'pitcher': return statcast_pitcher(time, player_id=int(playerid['key_mlbam'][0]))
-        else: return None
