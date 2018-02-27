@@ -6,7 +6,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import matplotlib.lines as lines
-from matplotlib.path import Path
 
 # Returns correct type of data (dependent on player and his type)
 def process_data(time, firstname, lastname, pos):
