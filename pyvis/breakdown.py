@@ -3,7 +3,7 @@ import data # data.py
 # BR in function names = breakdown (ex: batterBR = batter breakdown)
 
 # Batter event breakdown in pie chart
-# Time can be a day or a range of dates (ex: batterBR('2016-05-01', 'dustin', 'pedroia) 
+# Time can be a day or a range of dates (ex: batterBR('2016-05-01', 'dustin', 'pedroia') 
 # or batterBR('2016-05-01 to 2017-05-01', 'dustin', 'pedroia'))
 def batterBR(time, firstname, lastname):
     data = processData(time, firstname, lastname, 'batter')
