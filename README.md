@@ -9,6 +9,9 @@ First, you need to install `pybaseball` by typing the following into the command
 
 It is recommended that you replace any local files installed by `pip` with the files from the `pybaseball` repo, as some functions in `PyVis` use updated functions that have not been updated in the `pip` installation.
 
+## Installation
+Currently, you cannot install PyVis via `pip`. In the future, that will be the case. For now, download all the Python files in the PyVis folder into a local folder on your computer.
+
 ## How PyVis Works
 See [Explaining PyVis.md](https://github.com/kunalcsc630/pyvis/blob/master/pyvis/Explaining%20PyVis.md) to learn more about the capabilities of PyVis. Have fun visualizing!
 
