@@ -15,7 +15,7 @@ PyVis is split up into different files, depending on the user's needs. For insta
 Browse through the files to learn more about the capabilities of PyVis. Have fun visualizing!
 
 ## Contributing
-See [CONTRIBUTING.md](https://github.com/kunalcsc630/pyvis/blob/master/CONTRIBUTING) to learn how you can contribute to PyVis.
+See [CONTRIBUTING.md](https://github.com/kunalcsc630/pyvis/blob/master/CONTRIBUTING.md) to learn how you can contribute to PyVis.
 
 ## License
 The PyVis project is under the MIT License. See [LICENSE.md](https://github.com/kunalcsc630/pyvis/blob/master/LICENSE) for more.
