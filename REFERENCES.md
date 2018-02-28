@@ -1,5 +1,11 @@
 # References
 
+Main Acknowledgments:
+* [Dr. Nicholas Zufelt](https://github.com/nzufelt)
+* [Mr. James LeDoux](https://github.com/jldbc)
+* [Ms. Billie Thompson](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
+* [CSC630 Classmates](nzufelt.github.io/open_source_movement_csc630/)
+
 Code Links:
 * https://stackoverflow.com/questions/21519203/plotting-a-list-of-x-y-coordinates-in-python-matplotlib
 * https://stackoverflow.com/questions/35523635/extract-values-in-pandas-value-counts
@@ -13,7 +19,7 @@ Code Links:
 * https://stackoverflow.com/questions/31883097/elegant-way-to-match-a-string-to-a-random-color-matplotlib
 * https://pythonspot.com/matplotlib-scatterplot/
 
-Reference Links:
+Additional Links:
 * https://fastballs.wordpress.com/2007/08/02/glossary-of-the-gameday-pitch-fields/
 * https://github.com/gregoryck/pypitches
 * https://baseballwithr.files.wordpress.com/2015/02/plate_dims.jpg
