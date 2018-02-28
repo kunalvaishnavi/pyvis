@@ -1,4 +1,4 @@
-# All imports needed for pyvis
+# All imports needed for PyVis
 from pybaseball import playerid_lookup
 from pybaseball import statcast_batter
 from pybaseball import statcast_pitcher
@@ -8,6 +8,8 @@ import matplotlib.patches as patches
 import matplotlib.lines as lines
 
 # Returns correct type of data (dependent on player and his type)
+# Time can be a day or a range of dates (ex: process_data('2016-05-01', 'dustin', 'pedroia', 'batter') 
+# or process_data('2016-05-01 to 2017-05-01', 'dustin', 'pedroia', 'batter'))
 def process_data(time, firstname, lastname, pos):
     playerid = playerid_lookup(lastname, firstname)
     if "to" in time:
