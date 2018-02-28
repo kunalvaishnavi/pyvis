@@ -44,3 +44,6 @@ The strike zone that my code was generating was behaving weirdly last night, as 
 
 ## Feb 26
 I finished creating the `batter_strike_zone_plotting` last night and today I'm making an equivalent function for pitchers.
+
+## Feb 27 & 28
+I added many more functions and put them into separate files. I also rearranged the code so all the necessary imports are in one file, updated the documentation in the repo, renamed functions because their names were too long, and added REFERENCES.md to cite my sources.
