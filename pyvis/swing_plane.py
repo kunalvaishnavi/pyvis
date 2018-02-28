@@ -14,6 +14,7 @@ def swingPlane(time, firstname, lastname):
     freq = data['launch_angle'].value_counts()
     drawPlane(freq, firstname, lastname)
         
+# Draws swing plane based on given data from above
 def drawPlane(data, firstname, lastname): 
     print("Generating swing plane for " + firstname.title() + " " + lastname.title() + ":")
     fig = plt.figure(figsize=(6,6))
