@@ -1,7 +1,0 @@
-# Explaining PyVis
-
-PyVis is split up into different files, depending on the user's needs. For instance, if the user needs to plot data points 
-in a strike zone, the aptly named `strike_zone.py` file will do so. At the top of each function is a brief explanation as to 
-what the function does. The `data.py` file is the "initializer" as it has all of the imports needed for all files and has the 
-main function used to scrape the data for all other functions in PyVis. Hence, in all other files, the only import statement 
-is `import data`.
