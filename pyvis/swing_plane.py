@@ -5,10 +5,12 @@ import data # data.py
 # or swingPlane('2017-04-01 to 2017-05-01', 'mookie', 'betts'))
 def swingPlane(time, firstname, lastname):
     data = processData(time, firstname, lastname, 'batter')
-    if data.size == 0: return "Error: Did not find any data. Try again."
+    if data.size == 0: 
+        return "Error: Did not find any data. Try again."
     indices = []
     for i, row in enumerate(data['description']):
-        if row == 'hit_into_play_score' or row == 'hit_into_play_no_out': indices.append(i)
+        if row == 'hit_into_play_score' or row == 'hit_into_play_no_out': 
+            indices.append(i)
     data = data.iloc[indices]
     data['launch_angle'] = data['launch_angle'].round()
     freq = data['launch_angle'].value_counts()
