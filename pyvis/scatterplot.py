@@ -6,7 +6,8 @@ import data # data.py
 # Pos is either 'pitcher' or 'batter'
 def scatterPlot(time, firstname, lastname, pos):
     data = processData(time, firstname, lastname, pos)
-    if data.size == 0: return "Error: Did not find any data. Try again."
+    if data.size == 0: 
+        return "Error: Did not find any data. Try again."
     generalPlot(data, firstname, lastname)
 
 # Generates a scatterplot based on user's input
@@ -15,18 +16,21 @@ def generalPlot(data, firstname, lastname):
     user = askUser(options)
     x_data = getRightData(data, int(user[0]))
     y_data = getRightData(data, int(user[1]))
+    
     drop = []
     for i, (x, y) in enumerate(zip(x_data, y_data)):
         if np.isnan([x]) or np.isnan([y]):
             drop.append(i)
     x_data.drop(drop, inplace=True)
     y_data.drop(drop, inplace=True)
+    
     print("Matching data points to type of pitch.")
     # get summary of pitches
     pitch_types = data.iloc[x_data.keys().tolist()]['pitch_type'].value_counts().keys().tolist()
     cmap = plt.get_cmap('viridis')
     # map a pitch to a specific color
     colors = cmap(np.linspace(0, 1, len(pitch_types)))
+    
     names = {'FF': '4 Seam Fastball', 'FA': '4 Seam Fastball', 'FT': '2 Seam Fastball', 'FC': 'Cutter', 
              'FS': 'Splitter', 'FO': 'Forkball', 'SI': 'Sinker', 'SL': 'Slider', 'CU': 'Curveball', 
              'KC': 'Knuckle Curve', 'EP': 'Eephus', 'CH': 'Changeup', 'SC': 'Screwball', 'KN': 'Knuckleball', 
@@ -38,6 +42,7 @@ def generalPlot(data, firstname, lastname):
     plt.xlabel(options[int(user[0])].title())
     plt.ylabel(options[int(user[1])].title())
     plt.title(options[int(user[1])].title() + " vs. " + options[int(user[0])].title() + " for " + firstname.title() + " " + lastname.title())
+
     print("Would you like a trendline (a.k.a. line of best fit) for this scatterplot? (yes/no)")
     trendline_decision = input()
     if trendline_decision.lower() in ["y", "yes"]:
