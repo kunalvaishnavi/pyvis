@@ -10,7 +10,9 @@ First, you need to install `pybaseball` by typing the following into the command
 It is recommended that you replace any local files installed by `pip` with the files from the `pybaseball` repo, as some functions in `PyVis` use updated functions that have not been updated in the `pip` installation.
 
 ## How PyVis Works
-PyVis is split up into different files, depending on the user's needs. For instance, if the user needs to plot data points in a strike zone, the aptly named `strike_zone.py` file will do so. At the top of each function is a brief explanation as to what the function does. The `data.py` file is the "initializer" as it has all of the imports needed for all files and has the main function used to scrape the data for all other functions in PyVis. Hence, in all other files, the only import statement is `import data`. Browse through the files to learn more about the capabilities of PyVis. Have fun visualizing!
+PyVis is split up into different files, depending on the user's needs. For instance, if the user needs to plot data points in a strike zone, the aptly named `strike_zone.py` file will do so. At the top of each function is a brief explanation as to what the function does. The `data.py` file is the "initializer" as it has all of the imports needed for all files and has the main function used to scrape the data for all other functions in PyVis. Hence, in all other files, the only import statement is `import data`. 
+
+Browse through the files to learn more about the capabilities of PyVis. Have fun visualizing!
 
 ## Contributing
 See CONTRIBUTING.md to learn how you can contribute to PyVis.
