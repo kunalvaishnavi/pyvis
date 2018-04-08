@@ -13,7 +13,7 @@ It is recommended that you replace any local files installed by `pip` with the f
 Currently, you cannot install PyVis via `pip`. In the future, that will be the case. For now, download all the Python files in the PyVis folder into a local folder on your computer.
 
 ## How PyVis Works
-See [Explaining PyVis.md](https://github.com/kunalcsc630/pyvis/blob/master/pyvis/Explaining%20PyVis.md) to learn more about the capabilities of PyVis. Have fun visualizing!
+See [Explaining PyVis.md](https://github.com/kunalcsc630/pyvis/blob/master/Explaining%20PyVis.md) to learn more about the capabilities of PyVis. Have fun visualizing!
 
 ## Contributing
 See [CONTRIBUTING.md](https://github.com/kunalcsc630/pyvis/blob/master/CONTRIBUTING.md) to learn how you can contribute to PyVis.
