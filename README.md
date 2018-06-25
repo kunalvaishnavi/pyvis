@@ -13,17 +13,17 @@ It is recommended that you replace any local files installed by `pip` with the f
 Currently, you cannot install PyVis via `pip`. In the future, that will be the case. For now, download all the Python files in the PyVis folder into a local folder on your computer.
 
 ## How PyVis Works
-See [Explaining PyVis.md](https://github.com/kunalcsc630/pyvis/blob/master/Explaining%20PyVis.md) to learn more about the capabilities of PyVis. Have fun visualizing!
+See [Explaining PyVis.md](https://github.com/kunalvaishnavi/pyvis/blob/master/Explaining%20PyVis.md) to learn more about the capabilities of PyVis. Have fun visualizing!
 
 ## Contributing
-See [CONTRIBUTING.md](https://github.com/kunalcsc630/pyvis/blob/master/CONTRIBUTING.md) to learn how you can contribute to PyVis.
+See [CONTRIBUTING.md](https://github.com/kunalvaishnavi/pyvis/blob/master/CONTRIBUTING.md) to learn how you can contribute to PyVis.
 
 ## License
-The PyVis project is under the MIT License. See [LICENSE.md](https://github.com/kunalcsc630/pyvis/blob/master/LICENSE) for more.
+The PyVis project is under the MIT License. See [LICENSE.md](https://github.com/kunalvaishnavi/pyvis/blob/master/LICENSE) for more.
 
 ## Acknowledgments
 * [Dr. Nicholas Zufelt](https://github.com/nzufelt)
 * [Mr. James LeDoux](https://github.com/jldbc)
 * [Ms. Billie Thompson](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
 * [CSC630 Classmates](nzufelt.github.io/open_source_movement_csc630/)
-* Additional references available [here](https://github.com/kunalcsc630/pyvis/blob/master/REFERENCES.md)
+* Additional references available [here](https://github.com/kunalvaishnavi/pyvis/blob/master/REFERENCES.md)
