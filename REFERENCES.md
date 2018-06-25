@@ -4,7 +4,7 @@ Main Acknowledgments:
 * [Dr. Nicholas Zufelt](https://github.com/nzufelt)
 * [Mr. James LeDoux](https://github.com/jldbc)
 * [Ms. Billie Thompson](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [CSC630 Classmates](nzufelt.github.io/open_source_movement_csc630/)
+* [CSC630 Classmates](https://nzufelt.github.io/open_source_movement_csc630/)
 
 Code Links:
 * https://stackoverflow.com/questions/21519203/plotting-a-list-of-x-y-coordinates-in-python-matplotlib
